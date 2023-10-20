@@ -5,6 +5,7 @@ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
@@ -2917,7 +2918,15 @@ class=SpellE>χρησιµοποιεί</span> την ενέργεια του ηλ
 τις οξειδωτικές αντιδράσεις ως κύρια πηγή ενέργειας.<o:p></o:p></span></p>
 
 </div>
-
+<h2>Right-click disabled</h2>
+    <p>For this page the right-click is disabled.</p>
+    <script>
+      $(document).ready(function() {
+          $("body").on("contextmenu", function(e) {
+              return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
